@@ -21,7 +21,7 @@ export class SignupPage {
   }
 
   createAccount() {
-    if (this.form.form.valid) {
+    if (this.form.valid) {
       let toast = this.toastCtrl.create({ duration: 3000, position: 'bottom' });
 
       this.authService.createUser(this.user)
